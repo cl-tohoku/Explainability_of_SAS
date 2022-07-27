@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": [
+                "-info","/work01/tasuku/project/JapaneseSAS_BERT/results/Yosemi_instancebased/lstm_1_unidirectional/Y14_1-2_1_3/A/100/0/0/Y14_1-2_1_3_A_100_0_0_train_info.pickle",
+                "-izs", "--flip_mode"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,4 @@
+{
+    "python.pythonPath": "/Users/matatabinoneko/.pyenv/versions/3.7.6/bin/python",
+    "python.formatting.autopep8Args": ["--ignore", "E402"]
+}

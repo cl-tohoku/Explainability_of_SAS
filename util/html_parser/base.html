@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+	<title><----input_prompt_name----></title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		:root {
+			--A-color: #ffadad;
+			--A-color-right: #ffadad50;
+			--B-color: #ffd6a5;
+			--B-color-right: #ffd6a550;
+			--C-color: #fdffb6;
+			--C-color-right: #fdffb650;
+			--D-color:  #caffbf;
+			--D-color-right:  #caffbf50;
+			--E-color:  #9bf6ff;
+			--E-color-right:  #9bf6ff50;
+		}
+
+		.A{
+			background-color: var(--A-color)}
+		.B{
+			background-color:var(--B-color)}
+		.C{
+			background-color:var(--C-color)}
+		.D{
+			background-color:var(--D-color)}
+		.E{
+			background-color:var(--E-color)}
+		.AB{
+			background: linear-gradient(var(--A-color)50%,var(--B-color)50%,var(--B-color)100%)}
+		.AC{
+			background: linear-gradient(var(--A-color)50%,var(--C-color)50%,var(--C-color)100%)}
+		.AD{
+			background: linear-gradient(var(--A-color)50%,var(--D-color)50%,var(--D-color)100%)}
+		.AE{
+			background: linear-gradient(var(--A-color)50%,var(--E-color)50%,var(--E-color)100%)}
+		.BC{
+			background: linear-gradient(var(--B-color)50%,var(--C-color)50%,var(--C-color)100%)}
+		.BD{
+			background: linear-gradient(var(--B-color)50%,var(--D-color)50%,var(--D-color)100%)}
+		.BE{
+			background: linear-gradient(var(--B-color)50%,var(--E-color)50%,var(--E-color)100%)}
+		.CD{
+			background: linear-gradient(var(--C-color)50%,var(--D-color)50%,var(--D-color)100%)}
+		.CE{
+			background: linear-gradient(var(--C-color)50%,var(--E-color)50%,var(--E-color)100%)}
+		.DE{
+			background: linear-gradient(var(--D-color)50%,var(--E-color)50%,var(--E-color)100%)}
+		.ABC{
+			background: linear-gradient(var(--A-color)33%,var(--B-color)33%,var(--B-color)66%,var(--C-color)66%,var(--C-color)99%)}
+		.ABD{
+			background: linear-gradient(var(--A-color)33%,var(--B-color)33%,var(--B-color)66%,var(--D-color)66%,var(--D-color)99%)}
+		.ABE{
+			background: linear-gradient(var(--A-color)33%,var(--B-color)33%,var(--B-color)66%,var(--E-color)66%,var(--E-color)99%)}
+		.ACD{
+			background: linear-gradient(var(--A-color)33%,var(--C-color)33%,var(--C-color)66%,var(--D-color)66%,var(--D-color)99%)}
+		.ACE{
+			background: linear-gradient(var(--A-color)33%,var(--C-color)33%,var(--C-color)66%,var(--E-color)66%,var(--E-color)99%)}
+		.ADE{
+			background: linear-gradient(var(--A-color)33%,var(--D-color)33%,var(--D-color)66%,var(--E-color)66%,var(--E-color)99%)}
+		.BCD{
+			background: linear-gradient(var(--B-color)33%,var(--C-color)33%,var(--C-color)66%,var(--D-color)66%,var(--D-color)99%)}
+		.BCE{
+			background: linear-gradient(var(--B-color)33%,var(--C-color)33%,var(--C-color)66%,var(--E-color)66%,var(--E-color)99%)}
+		.BDE{
+			background: linear-gradient(var(--B-color)33%,var(--D-color)33%,var(--D-color)66%,var(--E-color)66%,var(--E-color)99%)}
+		.CDE{
+			background: linear-gradient(var(--C-color)33%,var(--D-color)33%,var(--D-color)66%,var(--E-color)66%,var(--E-color)99%)}
+		.ABCD{
+			background: linear-gradient(var(--A-color)25%,var(--B-color)25%,var(--B-color)50%,var(--C-color)50%,var(--C-color)75%,var(--D-color)75%,var(--D-color)100%)}
+		.ABCE{
+			background: linear-gradient(var(--A-color)25%,var(--B-color)25%,var(--B-color)50%,var(--C-color)50%,var(--C-color)75%,var(--E-color)75%,var(--E-color)100%)}
+		.ABDE{
+			background: linear-gradient(var(--A-color)25%,var(--B-color)25%,var(--B-color)50%,var(--D-color)50%,var(--D-color)75%,var(--E-color)75%,var(--E-color)100%)}
+		.ACDE{
+			background: linear-gradient(var(--A-color)25%,var(--C-color)25%,var(--C-color)50%,var(--D-color)50%,var(--D-color)75%,var(--E-color)75%,var(--E-color)100%)}
+		.BCDE{
+			background: linear-gradient(var(--B-color)25%,var(--C-color)25%,var(--C-color)50%,var(--D-color)50%,var(--D-color)75%,var(--E-color)75%,var(--E-color)100%)}
+		.ABCDE{
+			background: linear-gradient(var(--A-color)20%,var(--B-color)20%,var(--B-color)40%,var(--C-color)40%,var(--C-color)60%,var(--D-color)60%,var(--D-color)80%,var(--E-color)80%,var(--E-color)100%)}
+
+		table{
+			border-collapse:collapse;
+			margin:0 auto;
+			min-width:3500x;
+
+			width:atuo;
+		}
+		td,th{
+			padding:10px;
+			text-align: center;
+
+		}
+		th{
+			color:#fff;
+			background:#005ab3;
+		}
+
+		th.no{
+			width: 20px;
+			position: sticky;
+			left: 0;
+		}
+
+		th.item{
+			width: 60px;
+			min-width:60px;
+		}
+		th.miss{
+			width: 80px;
+			min-width:80px;
+
+		}
+
+		td.ans{
+			padding: 10px;
+			text-align: left;
+			min-width:800px;
+		}
+		td.ev{
+			padding: 10px;
+			text-align: left;
+			min-width:800px;
+		}
+
+		table tr:nth-child(odd){
+			background:#e6f2ff80;
+		}
+
+		table.center{
+
+			margin-left : auto ;
+
+		}
+
+	</style>
+	<!--===============================================================================================-->
+</head>
+<body>
+
+<div>
+<table>
+	<tr>
+<----input_table_header_here---->
+	</tr>
+	<----input_table_body_here---->
+	</table>
+</div>
+</body>
+</html>
